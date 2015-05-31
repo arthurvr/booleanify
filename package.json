@@ -1,0 +1,32 @@
+{
+  "name": "booleanify",
+  "version": "0.0.0",
+  "description": "Convert a value to a boolean - recognizes 'true' and 'false' strings",
+  "license": "MIT",
+  "repository": "arthurvr/booleanify",
+  "author": {
+    "name": "Arthur Verschaeve",
+    "email": "contact@arthurverschaeve.be",
+    "url": "arthurverschaeve.be"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "boolean",
+    "type",
+    "true",
+    "false",
+    "bool",
+    "convert"
+  ],
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
