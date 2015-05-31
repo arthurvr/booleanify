@@ -1,6 +1,6 @@
 {
   "name": "booleanify",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Convert a value to a boolean - recognizes 'true' and 'false' strings",
   "license": "MIT",
   "repository": "arthurvr/booleanify",
