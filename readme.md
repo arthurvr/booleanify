@@ -24,19 +24,10 @@ booleanify('false');
 booleanify(false);
 //=> false
 
-booleanify(0);
-//=> false
-
 booleanify('');
 //=> false
 
-booleanify(null);
-//=> false
-
 booleanify(123);
-//=> true
-
-booleanify('foobar');
 //=> true
 ```
 
