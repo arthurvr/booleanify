@@ -1,23 +1,29 @@
 'use strict';
-var assert = require('assert');
+var test = require('ava');
 var booleanify = require('./');
 
-it('should convert falsy values to `false`', function () {
+test('should convert falsy values to `false`', function (t) {
 	[undefined, null, 0, '', NaN, false].forEach(function (val) {
-		assert.strictEqual(booleanify(val), false);
+		t.false(booleanify(val));
 	});
+
+	t.end();
 });
 
-it('should convert truthy values to `true`', function () {
+test('should convert truthy values to `true`', function (t) {
 	['foobar', 20, true].forEach(function (val) {
-		assert.strictEqual(booleanify(val), true);
+		t.true(booleanify(val));
 	});
+
+	t.end();
 });
 
-it('should recognize \'true\'', function () {
-	assert.strictEqual(booleanify('true'), true);
+test('should recognize \'true\'', function (t) {
+	t.true(booleanify('true'));
+	t.end();
 });
 
-it('should recognize \'false\'', function () {
-	assert.strictEqual(booleanify('false'), false);
+test('should recognize \'false\'', function (t) {
+	t.false(booleanify('false'));
+	t.end();
 });
