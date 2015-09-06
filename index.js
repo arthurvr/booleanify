@@ -4,5 +4,5 @@ module.exports = function (value) {
 		return false;
 	}
 
-	return !!value;
+	return Boolean(value);
 };
