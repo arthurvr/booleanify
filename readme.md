@@ -13,7 +13,7 @@ $ npm install --save booleanify
 ## Usage
 
 ```js
-var booleanify = require('booleanify');
+const booleanify = require('booleanify');
 
 booleanify('true');
 //=> true
